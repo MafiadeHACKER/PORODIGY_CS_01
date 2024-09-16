@@ -21,3 +21,6 @@ def encrypt(text, shift):
     return result
 
 # Function to decrypt text using Caesar Cipher
+def decrypt(text, shift):
+    return encrypt(text, -shift)
+
