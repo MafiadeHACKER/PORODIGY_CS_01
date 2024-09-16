@@ -24,3 +24,24 @@ def encrypt(text, shift):
 def decrypt(text, shift):
     return encrypt(text, -shift)
 
+# Main program to allow user input
+def main():
+    choice = input("Do you want to Encrypt or Decrypt? (E/D): ").upper()
+
+    # Get user input for text and shift
+    text  = input("Enter the message: ")
+    shift = int(input("Enter the shift value: "))
+
+    # Perform  encryption or decryption based on user choice
+    if choice == 'E':
+        print("Encrypted message: ", encrypt(text, shift))
+
+    elif choice == 'D':
+        print("Decrypted message: ", decrypt(text, shift))
+
+    else:
+        print("Invalid choice. Please choose E for encryption or D for decryption.")
+
+# Run the Caesar Cipher program
+if  __name__ == "__main__":
+    main()
