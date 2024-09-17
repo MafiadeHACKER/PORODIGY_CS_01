@@ -9,7 +9,7 @@ The program handles both uppercase and lowercase letters. Non-alphabet character
 **How to Use**
 Clone or download this repository.
 Run the script:
-  python caesar_cipher.py
+  python CaesarCipher.py
 
 Follow the prompts:
   Choose whether to Encrypt or Decrypt.
